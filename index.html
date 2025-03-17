@@ -3,35 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ULTIMATE</title>
+    <title>ULTIMATE Billiard Sticks</title>
     <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             text-align: center;
-            margin-top: 50px;
+            padding: 50px 0;
         }
-        .link-button {
-            background-color: #000000;
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 50px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 18px;
+            padding: 8px 15px;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .link-button:hover {
+
+        .navbar a:hover {
             background-color: #45a049;
         }
+
+        /* Button container for better alignment */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Styling for the buttons */
+        .link-button {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        /* Icon Styling */
+        .link-button i {
+            font-size: 20px;
+        }
+
+        /* Decorative line */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: #333;
+            margin: 30px auto;
+        }
+
+        /* Footer section */
+        footer {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 50px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #45a049;
+        }
     </style>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body bgcolor="white">
-    <h1>Selamat datang di ULTIMATE.com</h1>
-    <p>Klik tombol di bawah untuk mengunjungi website kami:</p>
-    <!-- Link menuju website lain -->
-    <a href="produk.html">
-  <button type="button">Lihat Produk</button>
-     <a href="testimoni.html">
-  <button type="button">Testimoni</button>
-</a>
-    </a>
+<body>
+    <!-- Navbar section -->
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <h1>Selamat datang di ULTIMATE Billiard</h1>
+    <p>Temukan stik billiard berkualitas terbaik untuk permainan Anda.</p>
+    
+    <!-- Button container for better alignment -->
+    <div class="button-container">
+        <!-- Button for "Lihat Produk" with icon -->
+        <a href="produk.html" class="link-button">
+            <i class="fas fa-cogs"></i> Lihat Produk
+        </a>
+        
+        <!-- Button for "Testimoni" with icon -->
+        <a href="testimoni.html" class="link-button">
+            <i class="fas fa-comment-dots"></i> Testimoni
+        </a>
+    </div>
+
+    <!-- Decorative line to separate sections -->
+    <div class="divider"></div>
+
+    <!-- Footer with copyright -->
+    <footer>
+        <p>&copy; 2025 ULTIMATE Billiard. Semua hak cipta dilindungi.</p>
+        <p>Untuk lebih lanjut, kunjungi <a href="https://ultimatebilliard.com" target="_blank">website resmi kami</a>.</p>
+    </footer>
 </body>
 </html>
