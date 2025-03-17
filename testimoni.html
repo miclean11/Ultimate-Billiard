@@ -5,72 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimoni Produk Stik Billiard</title>
     <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1D4E2B;
+        }
+
+        /* Main container for testimonials */
         .container {
             width: 80%;
             margin: 20px auto;
             background-color: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 70vh;
         }
+
         h2 {
             text-align: center;
             color: #333;
+            margin-bottom: 30px;
         }
+
         .testimonial {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
         }
+
         .testimonial img {
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             margin-right: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .testimonial p {
             font-style: italic;
             color: #555;
+            font-size: 1.1em;
         }
+
         .testimonial .name {
             font-weight: bold;
             color: #333;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .testimonial {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .testimonial img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Testimoni Produk Stik Billiard</h2>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+    </nav>
 
-    <div class="testimonial">
-        <div>
-            <p>"Stik billiard ini sangat nyaman digunakan. Beratnya pas dan pegangan yang lembut membuat saya lebih mudah mengontrol bola. Sungguh produk yang luar biasa!"</p>
-            <div class="name">- Marvel Natanel, Pemain Billiard Profesional</div>
+    <!-- Main container for testimonials -->
+    <div class="container">
+        <h2>Testimoni Produk Stik Billiard</h2>
+
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Marvel Natanel">
+            <div>
+                <p>"Stik billiard ini sangat nyaman digunakan. Beratnya pas dan pegangan yang lembut membuat saya lebih mudah mengontrol bola. Sungguh produk yang luar biasa!"</p>
+                <div class="name">- Marvel Natanel, Pemain Billiard Profesional</div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Efren Reyes">
+            <div>
+                <p>"Saya sudah mencoba berbagai stik, tapi stik billiard ini benar-benar memberi pengalaman bermain yang terbaik. Kualitasnya sangat premium!"</p>
+                <div class="name">- Efren Reyes, Penggemar Billiard</div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Christian Jovan">
+            <div>
+                <p>"Tangan saya terasa sangat nyaman saat memegang stik ini. Saya merasa lebih percaya diri dalam setiap pukulan yang saya lakukan!"</p>
+                <div class="name">- Christian Jovan, Pemain Billiard Rekreasional</div>
+            </div>
         </div>
     </div>
 
-    <div class="testimonial">
-        <div>
-            <p>"Saya sudah mencoba berbagai stik, tapi stik billiard ini benar-benar memberi pengalaman bermain yang terbaik. Kualitasnya sangat premium!"</p>
-            <div class="name">- Efren Reyes, Penggemar Billiard</div>
-        </div>
-    </div>
-
-    <div class="testimonial">
-        <div>
-            <p>"Tangan saya terasa sangat nyaman saat memegang stik ini. Saya merasa lebih percaya diri dalam setiap pukulan yang saya lakukan!"</p>
-            <div class="name">- Christian Jovan, Pemain Billiard Rekreasional</div>
-        </div>
-    </div>
-
-</div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jasa Sewa Stik Billiard. ULTIMATE</p>
+    </footer>
 
 </body>
 </html>
