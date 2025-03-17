@@ -5,49 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasa Sewa Stik Billiard</title>
     <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Arial', sans-serif;
             background-color: #1D4E2B;
+            color: #333;
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 20px 0;
             text-align: center;
+            font-size: 1.5em;
+            text-transform: uppercase;
         }
+
+        header p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
         .container {
             max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: #00ff80;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .services {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            gap: 20px;
         }
+
         .service {
             background-color: #dfdede;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 8px;
             width: 30%;
             margin: 10px 0;
             box-shadow: 0 0 5px rgb(14, 161, 167);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
         .service img {
             width: 100%;
+            height: auto;
             border-radius: 5px;
+            transition: transform 0.3s ease;
         }
+
+        .service img:hover {
+            transform: scale(1.05);
+        }
+
+        .service h3 {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .service p {
+            text-align: center;
+            font-size: 1em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+        }
+
         footer {
-            border-radius: 10px;
-            width: 100%;
             text-align: center;
             padding: 10px;
             background-color: #1D4E2B;
             color: white;
+            margin-top: 50px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -59,107 +128,108 @@
         <p>Hubungi        : 0812345678</p>
         <p>Instagram      : ultimate.bl</p>
         <p>Tiktok         : ultimate.bl</p>
-
     </header>
 
     <div class="container">
-        <h2>Layanan Kami</h2>
-        <h3>Di sini, Anda dapat menyewa stik billiard dengan kualitas terbaik untuk pengalaman bermain yang menyenangkan.</h3>
+        <h2 style="text-align: center; margin-bottom: 20px;">Layanan Kami</h2>
+        <h3 style="text-align: center; margin-bottom: 40px;">Di sini, Anda dapat menyewa stik billiard dengan kualitas terbaik untuk pengalaman bermain yang menyenangkan.</h3>
 
-        <h2 align="center">1.Premium</h2>
+        <h2 align="center" style="margin-bottom: 30px;">1. Premium</h2>
         <div class="services">
             <div class="service">
                 <img src="er.jpg" alt="Stik Billiard 1">
                 <h3>Stik Billiard CueTec</h3>
                 <p>Stik billiard dengan bahan carbon premium dan dilengkapi dengan extension</p>
-                <p>Harga 1 Jam : Rp.400.000</p>
-                <p>Paket 2 Jam : Rp.650.000</p>
-                <p>Paket 3 Jam : Rp.900.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p class="price">Harga 1 Jam : Rp.400.000</p>
+                <p class="price">Paket 2 Jam : Rp.650.000</p>
+                <p class="price">Paket 3 Jam : Rp.900.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
             <div class="service">
                 <img src="2185a1da-3d2b-4b5e-bfe9-cc3be3cc5b0c.jpg" alt="Stik Billiard 1">
                 <h3>Stik Billiard CueTec SVB</h3>
                 <p>Stik billiard dengan bahan carbon premium yang merupakan stik andalan Profesional Player Shane Van Boening</p>
-                <p>Harga 1 Jam : Rp.500.000</p>
-                <p>Paket 2 Jam : Rp.750.000</p>
-                <p>Paket 3 Jam : Rp1.000.000</p>
-                <p>Jam selanjutnya +Rp.350.000</p>
+                <p class="price">Harga 1 Jam : Rp.500.000</p>
+                <p class="price">Paket 2 Jam : Rp.750.000</p>
+                <p class="price">Paket 3 Jam : Rp1.000.000</p>
+                <p class="price">Jam selanjutnya +Rp.350.000</p>
             </div>
             <div class="service">
                 <img src="PROFESIONAL_BILLIARD_CUE_EXCEED_EXC2-E.webp" alt="Stik Billiard 1">
                 <h3>Stik Billiard Exceed</h3>
                 <p>Stik Billiard dengan bahan super premium dan sudah dilengkapi dengan hardcase</p>
-                <p>Harga 1 Jam : Rp.700.000</p>
-                <p>Paket 2 Jam : Rp.950.000</p>
-                <p>Paket 3 Jam : Rp1.100.000</p>
-                <p>Jam selanjutnya +Rp.500.000</p>
+                <p class="price">Harga 1 Jam : Rp.700.000</p>
+                <p class="price">Paket 2 Jam : Rp.950.000</p>
+                <p class="price">Paket 3 Jam : Rp1.100.000</p>
+                <p class="price">Jam selanjutnya +Rp.500.000</p>
             </div>
+        </div>
 
-            <h2>2.Standard</h2>
-            <div class="services">
+        <h2 align="center" style="margin-top: 50px; margin-bottom: 30px;">2. Standard</h2>
+        <div class="services">
             <div class="service">
                 <img src="5d70e22c6bb1687f11064b1fe912eb7b.jpeg" alt="Stik Billiard 2">
                 <h3>Stik Billiard Mezz</h3>
                 <p>Stik Billiard dengan bahan carbon kualitas medium yang cocok digunakan untuk pemain advanced</p>
-                <p>Harga 1 Jam : Rp.200.000</p>
-                <p>Paket 2 Jam : Rp.450.000</p>
-                <p>Paket 3 Jam : Rp.700.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p class="price">Harga 1 Jam : Rp.200.000</p>
+                <p class="price">Paket 2 Jam : Rp.450.000</p>
+                <p class="price">Paket 3 Jam : Rp.700.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
             <div class="service">
                 <img src="S3f4601d2712c40afa0667a7906751c5a6.avif" alt="Stik Billiard 2">
                 <h3>Stik Billiard Predator</h3>
-                <p>Stik billiard dengan bahan kayu kualitas premium dan memiliki bobot yang ringan .</p>
-                <p>Harga 1 Jam : Rp.300.000</p>
-                <p>Paket 2 Jam : Rp.550.000</p>
-                <p>Paket 3 Jam : Rp.800.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p>Stik billiard dengan bahan kayu kualitas premium dan memiliki bobot yang ringan.</p>
+                <p class="price">Harga 1 Jam : Rp.300.000</p>
+                <p class="price">Paket 2 Jam : Rp.550.000</p>
+                <p class="price">Paket 3 Jam : Rp.800.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
             <div class="service">
                 <img src="S2e31d708b05c4666b2f4ba187dc8df49u.avif" alt="Stik Billiard 2">
                 <h3>Stik Billiard JFlowers</h3>
                 <p>Stik billiard dengan bahan carbon kualitas medium dan mempunyai defleksi yang bagus.</p>
-                <p>Harga 1 Jam : Rp.150.000</p>
-                <p>Paket 2 Jam : Rp.400.000</p>
-                <p>Paket 3 Jam : Rp.650.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p class="price">Harga 1 Jam : Rp.150.000</p>
+                <p class="price">Paket 2 Jam : Rp.400.000</p>
+                <p class="price">Paket 3 Jam : Rp.650.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
+        </div>
 
-            <h2>3.Pemula</h2>
-            <div class="services">
+        <h2 align="center" style="margin-top: 50px; margin-bottom: 30px;">3. Pemula</h2>
+        <div class="services">
             <div class="service">
                 <img src="Ha953aed3c32d47669023dd75e26fb2deT.webp" alt="Stik Billiard 3">
                 <h3>Stik Billiard Fury</h3>
-                <p>Stik billiard yang dirancang khusus untuk pemula yang mudah digunakan </p>
-                <p>Harga 1 Jam : Rp.75.000</p>
-                <p>Paket 2 Jam : Rp.150.000</p>
-                <p>Paket 3 Jam : Rp.250.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p>Stik billiard yang dirancang khusus untuk pemula yang mudah digunakan</p>
+                <p class="price">Harga 1 Jam : Rp.75.000</p>
+                <p class="price">Paket 2 Jam : Rp.150.000</p>
+                <p class="price">Paket 3 Jam : Rp.250.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
             <div class="service">
                 <img src="kr.jpeg" alt="Stik Billiard 3">
                 <h3>Stik Billiard Kaiser</h3>
                 <p>Stik billiard yang dirancang khusus untuk pemula dan memiliki bobot yang cukup berat</p>
-                <p>Harga 1 Jam : Rp.75.000</p>
-                <p>Paket 2 Jam : Rp.150.000</p>
-                <p>Paket 3 Jam : Rp.250.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p class="price">Harga 1 Jam : Rp.75.000</p>
+                <p class="price">Paket 2 Jam : Rp.150.000</p>
+                <p class="price">Paket 3 Jam : Rp.250.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
             <div class="service">
                 <img src="cm.jpg" alt="Stik Billiard 3">
                 <h3>Stik Billiard CueMall</h3>
                 <p>Stik billiard yang dirancang khusus untuk pemula dan memiliki bahan carbon yang terjangkau</p>
-                <p>Harga 1 Jam : Rp.75.000</p>
-                <p>Paket 2 Jam : Rp.150.000</p>
-                <p>Paket 3 Jam : Rp.250.000</p>
-                <p>Jam selanjutnya +Rp.300.000</p>
+                <p class="price">Harga 1 Jam : Rp.75.000</p>
+                <p class="price">Paket 2 Jam : Rp.150.000</p>
+                <p class="price">Paket 3 Jam : Rp.250.000</p>
+                <p class="price">Jam selanjutnya +Rp.300.000</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <p> 2025 Jasa Sewa Stik Billiard. ULTIMATE</p>
+        <p>2025 Jasa Sewa Stik Billiard. ULTIMATE</p>
     </footer>
 
 </body>
